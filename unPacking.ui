@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>unPacking</class>
+ <widget class="QWidget" name="unPacking">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>402</width>
+    <height>197</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>数据解包</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="inputFile">
+     <property name="title">
+      <string>输入文件</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_3">
+      <item row="0" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="5,0">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLabel" name="fileLable">
+            <property name="text">
+             <string>文件路径</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="fileEdit"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QPushButton" name="fileOptionBnt">
+            <property name="text">
+             <string>...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QGroupBox" name="parameterSetting">
+       <property name="title">
+        <string>参数设置</string>
+       </property>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,2">
+          <item>
+           <widget class="QLabel" name="packLenlabel">
+            <property name="text">
+             <string>包长度</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="packLenBox">
+            <item>
+             <property name="text">
+              <string>898</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1024</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="runCommand">
+       <property name="title">
+        <string>运行指令</string>
+       </property>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="startBnt">
+            <property name="text">
+             <string>开始</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="cancelBnt">
+            <property name="text">
+             <string>取消</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cancelBnt</sender>
+   <signal>clicked()</signal>
+   <receiver>unPacking</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>337</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>98</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startBnt</sender>
+   <signal>clicked()</signal>
+   <receiver>unPacking</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>98</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

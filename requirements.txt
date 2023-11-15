@@ -1,0 +1,11 @@
+numpy==1.23
+opencv-python==4.6.0.66
+matplotlib==3.6.2
+crcmod==1.7
+scipy==1.10.1
+PySide6 == 6.5.0
+PySide6-Addons ==    6.5.0
+PySide6-Essentials == 6.5.0
+pyinstaller  ==  5.10.1
+
+
